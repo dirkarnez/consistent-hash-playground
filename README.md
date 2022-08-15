@@ -1,8 +1,17 @@
 consistent-hash-playground
 ==========================
+### Notes
+- Severs (including duplicates) mapped to random location of the hash-ring (eg `location = hash(server)`)
+- Requests also mapped to arbitary part of the ring (eg `location = hash(request)`)
+- Therefore, these requests will be served by nearest server (clockwise)
+- Since hash-ring is circular (using math "modulo operation") obviously, any dead server will not stop serving incoming requests, since these requests always have nearest server
+- The problem of this algorithm is: the distribution of servers may not be balanced - there may be a lot of servers mapped to part of the ring, and not many to the rest of the ring. Therefore, some servers may have much more workload than other servers
+- Therefore, there are other algorithms or this algorithm implemented differently
+
 ### TODOs
 - [ ] implement return `nullptr` in `get` method
 - [ ] implement hashing with `number_of_replicas`
+- [ ] fix server collision
 
 ### Notes
 - [Chord (peer-to-peer) - Wikipedia](https://en.wikipedia.org/wiki/Chord_(peer-to-peer))
