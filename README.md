@@ -26,3 +26,4 @@ consistent-hash-playground
         > 
         > and this is what is actually used in practice. Chord algorithm is just an example of this technique to add K replicas for each server id
 - [A Brief Introduction to Consistent Hashing - YouTube](https://www.youtube.com/watch?v=tHEyzVbl4bg)
+- [groupcache/consistenthash at master · golang/groupcache](https://github.com/golang/groupcache/tree/master/consistenthash)
