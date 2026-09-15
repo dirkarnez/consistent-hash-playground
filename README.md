@@ -30,3 +30,6 @@ consistent-hash-playground
 - [一致性hash解决节点弹缩问题_一致性哈希做弹性伸缩的系统-CSDN博客](https://blog.csdn.net/gyunling/article/details/100121110)
 
 
+
+
+<!-- Security scan triggered at 2026-09-15 09:37:31 -->
